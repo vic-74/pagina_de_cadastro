@@ -12,23 +12,46 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 50xp;
+            height: 50vh;
             margin: 0;
         }
         .container{
             background-color: rgb(255, 255, 255);
-            padding: 30px;
+            padding: 35px;
             border-radius: 10px;
-            box-shadow: 0 0 20px #48ff00;
+            box-shadow: 0 0 35px #48ff00;
+            text-align: center;
+
+
+        }
+        input{
+            padding: 10px;
+            margin: 10px;
+            border: 5px inset rgb(77, 158, 196);
+            border-radius: 11px;
+            box-shadow: 0 0 10px;
+        }
+        button{
+            width: 90%;
+            height: 25px;
+            background-color: rgb(166, 192, 123);
+            color: rgb(255, 255, 255);
+            font-size: 15px;
+            border-radius: 11px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: aliceblue;
+            color: black;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h2>login</h2>
-        login  :<input type="text"
+        <h2>Login</h2>
+        <input type="text"
         placeholder="email"><br>
-        senha:  <input type="password" placeholder="senha"><br>
+        <input type="password" placeholder="senha"><br>
         <button>entrar</button>
     </div>
 </body>
