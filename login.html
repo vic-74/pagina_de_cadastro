@@ -2,17 +2,17 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cadastro</title>
+    <meta name="viewport"content="width=device-width, inicial-scale=1.0">
+
+    <title>Document</title>
     <style>
-      body{
+        body{
             background-color: rgb(62, 113, 170);
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 55vh;
+            height: 40vh;
             margin: 0;
         }
         .container{
@@ -27,12 +27,12 @@
         input{
             padding: 10px;
             margin: 10px;
-            border: 5px inset rgb(170, 189, 197);
+            border: 5px inset rgb(77, 158, 196);
             border-radius: 11px;
             box-shadow: 0 0 10px;
         }
         button{
-            width: 65%;
+            width: 90%;
             height: 25px;
             background-color: rgb(166, 192, 123);
             color: rgb(255, 255, 255);
@@ -44,21 +44,25 @@
             background-color: aliceblue;
             color: black;
         }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+            
     </style>
 </head>
 <body>
     <div class="container">
-       <h1>cadastre-se</h1>
+        <h2>Login</h2>
         <input type="text"
-        placeholder="Nome"><br>
-        <input type="text"
-        placeholder="Data de nacimento"><br>
-        <input type="text"
-        placeholder="Email"><br>
+        placeholder="email"><br>
         <input type="password" placeholder="senha"><br>
-        <input type="password" placeholder="Confirmar senha"><br>
-       
-      <a href="./Login.html"><button>cadastre-se</button></a>
+        <button>entrar</button>
+        <a href="./cadastro.html">Cadastre</a><br>
+        <a href="">esqueci minha senha</a>
     </div>
 </body>
 </html>
