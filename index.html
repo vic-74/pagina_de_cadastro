@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Pagina inicial</title>
     <style>
         *{
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
         .menu{
             list-style: nome;
@@ -18,10 +19,22 @@
             width: 100%;
         }
         .menu li{
-            position: relative;
+           list-style: nome;/*limpar os marcadores padrao da lista UL ou OL*/
+           display: flex;/*permite que os elementos sejam organizados de maneira flexivel*/
+           justify-content: space-around;/*distribui os itens uniformimente deixado um espaçoentre eles*/
+           align-items: center;/*centraliza verticalmente os elementos*/
+           background-color: aquamarine;/*cor de fundo*/
+           padding: 10px 0;/*adiciona 10 pixels de espaçamento em cima e em baixo sem mudar a laterais*/
+           position: fixed;
+           top: 0;
+           width: 100%;
+           z-index: 1000;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
         }
     </style>
-</head>
+</head>/
 <body>
     <nav class="menu">
         <ul>
@@ -29,6 +42,7 @@
             <li>Sobre</li>
             <li>Perfil</li>
             <li>Contatos</li>
+            <li><a href="./login.html"></a>Conta</li>
         </ul>
     </nav>
 </body>
